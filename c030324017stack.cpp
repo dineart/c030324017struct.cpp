@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+#define MAXSTACK 100
 
 typedef int ItemType;
 
