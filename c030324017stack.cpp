@@ -51,3 +51,24 @@ void PrintStack(Stack *S) {
     cout << endl;
 
 }
+
+
+int main() {
+    Stack S;
+    ItemType x;
+    InitializeStack(&S);
+
+    Push(10, &s);
+    Push(20, &s);
+    Push(30, &s);
+
+    PrintStack(&S);
+
+    Pop(&S, &x);
+    cout << "Item yang di-pop:" << x << endl;
+
+    PrintStack(&S);
+
+    
+    return 0;
+}
