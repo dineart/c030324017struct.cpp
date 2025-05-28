@@ -6,10 +6,10 @@ using namespace std;
 typedef int ItemType;
 
 
-typedef struct{
+struct Stack {
     ItemType Item[MAXSTACK];
-    int Count;
-}Stack;
+    int Count = 0;
+}
 
 
 
