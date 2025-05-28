@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+
 using namespace std;
 
 struct mahasiswa {
@@ -10,17 +10,18 @@ struct mahasiswa {
     };
 
 int main(){
-    mahasiswa doni;
+    mahasiswa dina;
+    mahasiswa* ptr = &dina;
 
-    doni.nim = "c030324017";
-    doni.nama = "Dina Arianti";
-    doni.alamat = "Jl. Kuin Selatan";
-    doni.ipk = 3.9;
+    (*ptr).nim = "c030324017";
+    (*ptr).nama = "Dina";
+    (*ptr).alamat = "Jl. Kuin Selatan";
+    (*ptr).ipk = 3.9;
 
-    cout << doni.nim << "\n";
-    cout << doni.nama << "\n";
-    cout << doni.alamat << "\n";
-    cout << doni.ipk << "\n";
+    cout << "nim:" << (*ptr).nim << endl;
+    cout << "nama:" << (*ptr).nama << endl;
+    cout << "alamat:" << (*ptr).alamat << endl;
+    cout << "ipk:" << (*ptr).ipk << endl;
 
     return 0;
 }
